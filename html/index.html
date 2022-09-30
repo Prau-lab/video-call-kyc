@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Linking Responsive Style File -->
+    <link rel="stylesheet" href="../css/R-style.css">
+
+    <title>Video Calling</title>
+
+</head>
+
+<body>
+    <div id="main-container">
+        <section class="header-banner">
+            <p id="name">JHON ANTHONY</p>
+            <div class="img-p">
+                <span><img src="../images/recording.png" alt="" class="img-recording"></span>
+                <span class="recording">Recording</span>
+            </div>
+        </section>
+        <section class="screen">
+            <video class="first-screen" controls>
+                <source src="../images/DJI_20210904_145446_025_video.MP4" type="video/mp4">
+            </video>
+            <video class="second-screen" controls>
+                <source src="../images/DJI_20210904_145446_025_video.MP4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="none-section">
+            <div class="icon none">
+                <img src="../image/screen share.png" alt="" class="icons-bar">
+            </div>
+            <div class="icon none">
+                <img src="../image/capture.png" alt="" class="icons-bar">
+            </div>
+            <div class="icon none">
+                <a href=""><img src="../image/chat.png" alt="" class="icons-bar"></a>
+            </div>
+            <div class="icon none">
+                <img src="../images/recording.png" alt="" class="icons-bar">
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="icons-section">
+                <div class="icon">
+                    <img src="../image/video on.png" alt="" class="icons">
+                </div>
+                <div class="icon" id="cross">
+                    <img src="../image/video off.png" alt="" class="icons">
+                </div>
+                <div class="icon icon-none">
+                    <img src="../images/recording.png" alt="" class="icons">
+                </div>
+                <div class="icon">
+                    <img src="../image/microphone on.png" alt="" class="icons">
+                </div>
+                <div class="icon" id="cross">
+                    <img src="../image/microphone off.png" alt="" class="icons">
+                </div>
+                <div class="icon">
+                    <img src="../image/phone.png" alt="" class="icons">
+                </div>
+                <div class="icon icon-none">
+                    <a href=""><img src="../image/chat.png" alt="" class="icons"></a>
+                </div>
+                <div class="icon icon-none">
+                    <img src="../image/capture.png" alt="" class="icons ">
+                </div>
+                <div class="icon icon-none">
+                    <img src="../image/screen share.png" alt="" class="icons ">
+                </div>
+                <div class="icon cross">
+                    <img src="../image/three dot.png" alt="" class="icons active" onclick="show()">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Linking JavaScript File -->
+    <script src="../js/script.js"></script>
+    <script src="../js/videochat.js"></script>
+</body>
+
+</html>

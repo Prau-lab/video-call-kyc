@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --text-color:white;
+    --main-bg-color:#19192d;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding:0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    background:var(--main-bg-color);
+}
+ .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    height: 50rem;
+    background: var(--main-bg-color);
+    border-radius: 2rem;
+    box-shadow:10px 9px 17px 0px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 9px 17px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 9px 17px 0px rgba(0,0,0,0.47);
+}
+.header h2{
+    font-size: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    }
+
+.img{
+    border-radius: 70%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    filter: drop-shadow(0rem 0.25rem 0.688rem rgba(0, 0, 0, 0.25));
+}
+.button{
+    display: inline-block;
+    padding-left: 1rem;
+    padding-top:9rem;
+
+}
+.btn, .btn1{
+    background-color:rgb(39, 190, 39);
+    border:0;
+    align-items: center;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    margin: 4rem;
+    cursor: pointer;
+    }
+.btn:hover{
+    background-color:green;
+}
+.btn1{
+    background-color: red;
+}
+.btn1:hover{
+    background-color:rgb(216, 39, 39);;
+}
+.fa{
+    padding-right: 0.5rem;
+}
+
+
+/* media queries */
+@media(max-width:600px){
+    .container{
+        width: 70%;
+        height: auto;
+    }
+    .img{
+        height: auto;
+        width:40%;
+    }
+    .header h2{
+        font-size: 1.6rem;
+    }
+    .btn, .btn1 {
+        font-size:1.2rem;
+       }
+}
+@media(max-width:505px){
+    .btn, .btn1{
+        display: block;
+        margin-top: -2rem;
+    }
+    .button{
+        margin-left:4rem;
+    }
+}
+@media(max-width:380px){
+    .button{
+        margin-left: 3rem;
+    }
+}
+@media(max-width:280px){
+    .btn, .btn1{
+        padding:0.8rem;
+        font-size: 1rem;
+    }
+    .button{
+        margin-left:1.7rem;
+    }
+}

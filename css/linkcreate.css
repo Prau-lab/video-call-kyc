@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@400;500&family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@400;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,100;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg-color:#19192d;
+    --text-color:#ffffff;
+    --font-family:'Quicksand', sans-serif;
+    --btn-bg-color:#ffffff;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color:var(--main-bg-color);
+}
+.dialogue{
+    font-family: var(--font-family);
+    width: 31.25rem;
+    height: 25rem;
+    background-color:var(--main-bg-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 10px 9px 17px 0px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 9px 17px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 9px 17px 0px rgba(0,0,0,0.47);
+}
+
+.header{
+    width:31.25rem;
+    height: 6.25rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header  h1{
+    font-family:var(--font-family);
+    font-weight: 700;
+    font-size: 2.525rem;  
+}
+
+.content-section{
+    width: 31.25rem;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    width: 80%;
+    height: 3.625rem;
+    font-size: 1.6965rem;
+    border-radius: 15px;
+}
+
+.icon-section{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copy-icon{
+    height: 3rem;
+    margin: 1rem 1rem 0 1rem;
+    cursor: pointer;
+}
+.copy-icon img{
+    height: 2.648rem;
+    transition: all 0.3s ease 0s;
+}
+.copy-icon img:hover {
+    transform: translateY(-7px);
+}
+   
+.copy-icon img:active {
+    transform: translateY(-1px);
+}
+
+.button{
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button span{
+    margin: 0 0 0 0.9rem;
+}
+.button1{
+    
+    width: 100%;
+}
+.button span button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: #000;
+    background-color:var(--btn-bg-color);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}   
+.button span button:hover {
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+
